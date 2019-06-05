@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#0f0"
+            android:gravity="center"
+            android:shadowColor="#00f"
+            android:shadowDx="10.0"
+            android:shadowDy="8.0"
+            android:shadowRadius="3.0"
+            android:text="阴影TextView"
+            android:textColor="#f00"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            android:background="#0f0"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableRight="@mipmap/ic_launcher"
+            android:drawableBottom="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="带图标"
+            android:textColor="#f00"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_border"
+            android:gravity="center"
+            android:text="带边框"
+            android:textColor="#f00"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_corner"
+            android:gravity="center"
+            android:text="带圆角"
+            android:textColor="#f00"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_gradient"
+            android:gravity="center"
+            android:text="带渐变色"
+            android:textColor="#f00"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MyCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:height">20dp</item>
+    </style>
+
+    <style name="MySwitchTheme">
+        <item name="colorControlActivated">#0f0</item>
+        <item name="colorSwitchThumbNormal">#f00</item>
+        <item name="android:colorForeground">#00f</item>
+    </style>
+
+</resources>
