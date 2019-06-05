@@ -13,7 +13,7 @@ public class ButtonActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_button);
-
+        setTitle("Button");
         RadioGroup radioGroup = findViewById(R.id.rg);
 
         radioGroup.setOnCheckedChangeListener((group,checkedId)->{

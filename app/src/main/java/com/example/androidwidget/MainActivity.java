@@ -3,6 +3,7 @@ package com.example.androidwidget;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +25,18 @@ public class MainActivity extends AppCompatActivity {
         TextView buttonTextView = findViewById(R.id.button);
         buttonTextView.setOnClickListener((view)->{
             Intent intent = new Intent(MainActivity.this,ButtonActivity.class);
+            startActivity(intent);
+        });
+
+        TextView clockTextView = findViewById(R.id.cLock);
+        clockTextView.setOnClickListener((view)->{
+            Intent intent = new Intent(MainActivity.this,ClockActivity.class);
+            startActivity(intent);
+        });
+
+        TextView imageViewTextView = findViewById(R.id.imageView);
+        imageViewTextView.setOnClickListener((view)->{
+            Intent intent = new Intent(MainActivity.this, ImageViewActivity.class);
             startActivity(intent);
         });
     }
