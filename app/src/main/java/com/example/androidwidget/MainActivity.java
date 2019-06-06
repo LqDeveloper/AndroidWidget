@@ -16,31 +16,42 @@ public class MainActivity extends AppCompatActivity {
         handleClick();
     }
 
-    private void handleClick(){
+    private void handleClick() {
         TextView textView = findViewById(R.id.textView);
-        textView.setOnClickListener((view)->{
-            Intent intent = new Intent(MainActivity.this,TextViewActivity.class);
+        textView.setOnClickListener((view) -> {
+            Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
             startActivity(intent);
         });
         TextView buttonTextView = findViewById(R.id.button);
-        buttonTextView.setOnClickListener((view)->{
-            Intent intent = new Intent(MainActivity.this,ButtonActivity.class);
+        buttonTextView.setOnClickListener((view) -> {
+            Intent intent = new Intent(MainActivity.this, ButtonActivity.class);
             startActivity(intent);
         });
 
         TextView clockTextView = findViewById(R.id.cLock);
-        clockTextView.setOnClickListener((view)->{
-            Intent intent = new Intent(MainActivity.this,ClockActivity.class);
+        clockTextView.setOnClickListener((view) -> {
+            Intent intent = new Intent(MainActivity.this, ClockActivity.class);
             startActivity(intent);
         });
 
         TextView imageViewTextView = findViewById(R.id.imageView);
-        imageViewTextView.setOnClickListener((view)->{
+        imageViewTextView.setOnClickListener((view) -> {
             Intent intent = new Intent(MainActivity.this, ImageViewActivity.class);
             startActivity(intent);
         });
-    }
 
+        TextView adapterTextView = findViewById(R.id.adapter);
+        adapterTextView.setOnClickListener((view) -> {
+            Intent intent = new Intent(MainActivity.this, AdapterActivity.class);
+            startActivity(intent);
+        });
+
+        TextView viewPagerTextView = findViewById(R.id.viewPager);
+        viewPagerTextView.setOnClickListener((view) -> {
+            Intent intent = new Intent(MainActivity.this, ViewPagerActivity.class);
+            startActivity(intent);
+        });
+    }
 
 
 }
